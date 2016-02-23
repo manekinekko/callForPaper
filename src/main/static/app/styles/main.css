@@ -259,10 +259,17 @@ textarea{
   color: #555;
 }
 
-.btn-google-plus {
+/*
+this selector has to be more specific so it can bypass
+adblock social custom filters list.
+see: https://github.com/breizhcamp/callForPaper/issues/40
+*/
+button.btn-google-plus {
   color: #fff !important;
   background-color: #dd4b39 !important;
   border: 1px solid #d54331;
+  display: inline-block !important;
+  visibility: visible !important;
 }
 
 .btn-google-plus:hover,

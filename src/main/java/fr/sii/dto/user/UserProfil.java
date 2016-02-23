@@ -17,6 +17,7 @@ public class UserProfil {
     private String github;
     private String imageProfilURL;
     private String email;
+    private String language = "fr";
 
     public UserProfil() {
         super();
@@ -56,8 +57,16 @@ public class UserProfil {
         return phone;
     }
 
+    public String getLanguage() {
+        return language;
+    }
+
     public void setPhone(String phone) {
         this.phone = phone;
+    }
+
+    public void setLanguage(String language) {
+        this.language = language;
     }
 
     public String getBio() {

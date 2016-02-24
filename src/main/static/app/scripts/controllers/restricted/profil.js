@@ -6,7 +6,10 @@ angular.module('CallForPaper').controller('ProfilCtrl', function($scope, Restric
     $scope.formData.imageProfilKey = null;
 
     $scope.$watch(function() {
+      if($scope.form) {
         return $scope.form.lastname.$valid && $scope.form.firstname.$valid && ($scope.form.phone.$valid || $scope.formData.phone === '') && $scope.form.company.$valid && $scope.form.bio.$valid && $scope.form.social.$valid && $scope.form.twitter.$valid && $scope.form.googleplus.$valid && $scope.form.github.$valid;
+      }
+      return null;
     }, function(isValid) {
         $scope.formData.isValid = isValid;
     });

@@ -225,6 +225,9 @@ angular.module('CallForPaper', [
                     },
                     isProfileComplete: function(user, ProfileValidator) {
                         return ProfileValidator.isValid(user);
+                    },
+                    currentUser: function(AdminUser) {
+                        return AdminUser.getCurrentUser().$promise;
                     }
                 },
                 views: {

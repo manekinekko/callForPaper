@@ -26,6 +26,7 @@ angular.module('CallForPaper')
                 'logout': 'Se déconnecter',
                 'dashboard': 'Dashboard',
                 'profil': 'Profil',
+                'admin': 'Admin',
                 'openUntil': 'Ouvert jusqu\'au ',
                 'decision': 'Délibération le '
             },
@@ -341,6 +342,7 @@ angular.module('CallForPaper')
                 'login': 'Login',
                 'logout': 'Logout',
                 'dashboard': 'Dashboard',
+                'admin': 'Admin',
                 'profil': 'Profil',
                 'openUntil': 'Open until the ',
                 'decision': 'Decision the '

@@ -1,4 +1,7 @@
 <ul class="nav navbar-nav">
+    <li ui-sref-active="active" ng-if="topMenu.currentUser.admin">
+        <a ui-sref="admin.sessions">{{'header.admin' | translate}}</a>
+    </li>
     <li ui-sref-active="active" ng-class="{disabled: !topMenu.isProfileComplete}">
         <a ui-sref="app.dashboard">{{'header.dashboard' | translate}}</a>
     </li>
